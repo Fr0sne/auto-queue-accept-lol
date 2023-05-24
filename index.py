@@ -20,7 +20,7 @@ with mss() as sct:
       pyautogui.moveTo(click_x, click_y)
       pyautogui.click()
       break
-    cv2.imshow('Screen', sct_gray)
+    # cv2.imshow('Screen', sct_gray) # Apenas para depuração
     if cv2.waitKey(1) & 0xFF== ord('q'):
       break
 
